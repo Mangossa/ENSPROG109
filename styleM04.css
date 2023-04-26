@@ -14,6 +14,10 @@
  background-position: right;
  background-repeat:no-repeat;
 }
+#footer {
+  background-color: #76ff7a;
+}
+
 .article.column1 {
   background-color: #f08080
 }
@@ -24,10 +28,6 @@
   background-color: #fffacd
 }
 
-#footer {
-  background-color: #76ff7a;
-  
-}
 
 body {
   background-image: url('https://wallpaperaccess.com/full/1761715.jpg');
