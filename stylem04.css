@@ -1,0 +1,42 @@
+#header {
+  color: white;
+}
+#nav {
+ background-color: #BAA3F9;
+}
+#nav ul li a {
+  color: white;
+}
+#feature {
+ background-color: #ffc0cb;
+ background-image: url("https://www.pngfind.com/pngs/m/74-743796_cory-in-the-house-transparent-hd-png-download.png");
+ background-size:contain;
+ background-position: right;
+ background-repeat:no-repeat;
+}
+.article.column1 {
+  background-color: #f08080
+}
+.article.column2 {
+  background-color: #afeeee
+}
+.article.column3 {
+  background-color: #fffacd
+}
+
+#footer {
+  background-color: #76ff7a;
+  
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/1761715.jpg');
+  background-size: cover;
+
+}
+h1{
+   color: white;
+   font-family: 'JelleeBold';
+   font-weight: normal;
+   font-style: normal;
+}
