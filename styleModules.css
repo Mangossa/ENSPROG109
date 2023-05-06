@@ -1,0 +1,55 @@
+#header {
+  color: black;
+}
+div#nav {
+ background-color: #131313;
+  color: black;
+}
+div#nav ul li a {
+  color: white;
+}
+div#feature {
+ background-color: #131313;
+ background-image: url("");
+ background-size:contain;
+ background-position: right;
+ background-repeat:no-repeat;
+}
+div#footer {
+  background-color: #131313;
+}
+
+.article.column1 {
+  background-color: #f08080
+}
+.article.column2 {
+  background-color: #afeeee
+}
+.article.column3 {
+  background-color: #fffacd
+}
+
+
+body {
+  background-image: url('https://img.freepik.com/premium-vector/seamless-cubes-vector-background-rhombus-triangles-boxes-repeating-tile-pattern-3d-architecture-construction-geometric-design_570429-47803.jpg');
+  background-size: cover;
+
+}
+h1{
+   color: black;
+   font-family: 'JelleeBold';
+   font-weight: normal;
+   font-style: normal;
+}
+h2 , h3, a{
+   color: white;
+   font-family: 'JelleeBold';
+   font-weight: normal;
+   font-style: normal;
+}
+p{
+     color: white;
+   font-family: 'JelleeBold';
+   font-weight: normal;
+   font-style: normal;
+}
