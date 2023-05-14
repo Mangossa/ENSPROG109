@@ -1,38 +1,30 @@
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-  var up = generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol, "up");
-  var down = generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol, "down");
+  var rLine ="";
+  var half = Math.floor((pHeight - 1) / 2);
   
-  var rhombus = up + down;
+  // Generate top half of the rhombus
+  for (i=half; i>=0; i--){
+    rLine += " ".repeat(i) + " ".repeat(half-i) + generateLine((2*i)+2, pColorEven, pColorOdd, pSymbol) + " ".repeat(half-i) + " ".repeat(i) + "<br>";
+  }
   
-  document.getElementById("textRhombus").innerHTML = rhombus;
+  // Generate bottom half of the rhombus
+  for (i=1; i<=half; i++){
+    rLine += " ".repeat(i) + " ".repeat(half-i) + generateLine((2*i)+2, pColorEven, pColorOdd, pSymbol) + " ".repeat(half-i) + " ".repeat(i) + "<br>";
+  }
+  
+  document.getElementById("textRhombus").innerHTML = rLine;
 }
 
-function generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol, direction){
-  var rLine ="";
-  var start = 0;
-  var end = pHeight;
-  var increment = 1;
-  
-  if(direction === "down"){
-    start = pHeight-1;
-    end = -1;
-    increment = -1;
+function generateLine(numSymbols, pColorEven, pColorOdd, pSymbol){
+  var line = "";
+  for (j=0; j<numSymbols; j++){
+    // Is the position even or odd so we change the color
+    if (j%2)
+      // even
+      line +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+    else
+      // odd
+      line +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
   }
-  
-  for (i=start; i!==end; i+=increment){
-    rLine +="<p>";
-    // Create each line on the Rhombus
-    for(j=0; j<=i; j++){
-      // Is the position even or odd so we change the color
-      if (j%2)
-        // even
-        rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
-      else
-        // odd
-        rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
-    }
-    rLine +="</p>";
-  }
-  
-  return rLine;
+  return line;
 }
