@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <h2>String Calculator</h2>
+  <input type="text" id="number1" placeholder="Number 1">
+  <br>
+  <input type="text" id="number2" placeholder="Number 2">
+  <br>
+  <button onclick="calculate()">Calculate</button>
+  <br>
+  <h3 id="result"></h3>
+
+  <script>
+    function calculate() {
+      var number1 = document.getElementById("number1").value;
+      var number2 = document.getElementById("number2").value;
+      var result = number1 + number2;
+
+      document.getElementById("result").textContent = "Answer: " + result;
+    }
+  </script>
+</body>
+</html>
