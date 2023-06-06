@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.slideshow-slide {
+  display: none;
+}
+
+.slideshow-slide.active {
+  display: block;
+}
+
+.slideshow-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slideshow-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slideshow-controls {
+  text-align: center;
+}
+
+.slideshow-controls button {
+  margin: 0 5px;
+}
