@@ -31,4 +31,12 @@ var frmvalidator = new Validator("myform");
     } else {
       frmvalidator.removeValidation("ZipCode");
     }
+  var form = document.getElementById("myform");
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  if (frmvalidator.validate()) {
+    // Form is successfully validated
+    window.location.href = "thank_you.html"; // Redirect to thank you page
+  }
   });
